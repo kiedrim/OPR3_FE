@@ -1,0 +1,34 @@
+mat-card {
+  width: 500px;
+  margin: 30px auto auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.form-element {
+  padding-left: 28%;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  border-radius: 100px;
+  padding: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #3e8d32;
+  color: white;
+}
+
+
+h2 {
+  text-decoration: none;
+  font-size: 26px;
+  margin-left: 10px;
+  padding-right: 10px;
+  transition: 0.3s;
+}

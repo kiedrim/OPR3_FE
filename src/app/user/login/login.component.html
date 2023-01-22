@@ -1,0 +1,56 @@
+
+
+<div *ngIf="isLoggedIn">
+  <mat-card  class="card-success">
+    <p>Successful login</p>
+  </mat-card>
+</div>
+
+
+<mat-card *ngIf="!isLoggedIn">
+  <div class="container bootstrap snippets bootdey">
+    <div class="header">
+      <ul class="nav nav-pills pull-right">
+        <li><a href="#">&nbsp;</a></li>
+      </ul>
+      <h3 class="text-muted prj-name">Employee Manager app</h3>
+    </div>
+
+    <div style="height:auto;min-height:300px;" class="jumbotron">
+      <div class="col-md-4">
+        <img class="img-responsive center-block img-user" src="https://bootdey.com/img/Content/Manbrown2.png">
+      </div>
+      <div class="col-md-6 form-content">
+        <form (ngSubmit)="handleLogin()">
+          <h1 class="form-signin-heading text-muted">Login</h1>
+
+          <mat-form-field class="form-element" appearance="outline">
+            <mat-label for="username">Username</mat-label>
+            <input matInput type="text" id="username" [(ngModel)]="username" name="username" placeholder="username">
+          </mat-form-field>
+
+          <mat-form-field class="form-element" appearance="outline">
+            <mat-label for="password">Password</mat-label>
+            <input matInput type="password" id="password" [(ngModel)]="password" name="password" placeholder="password">
+          </mat-form-field>
+
+          <button type="submit" class="btn btn-lg btn-info btn-block">
+            <i class="fa fa-share"></i>
+            Login
+          </button>
+          <button routerLink="/register" class="btn btn-lg btn-info btn-block btn-warning">
+            <i></i>
+            Register
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <div class="container bootstrap snippets bootdey">
+      <footer class="footer">
+        <p>&copy; Matouš Kiedroň 2023</p>
+      </footer>
+    </div>
+  </div>
+</mat-card>
