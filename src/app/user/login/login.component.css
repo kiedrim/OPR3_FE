@@ -4,11 +4,12 @@ mat-card {
   padding: 30px;
   text-align: center;
   border-radius: 20px;
+  align-content: center;
 }
 
 .form-element {
   width: 100%;
-  padding-left: 28%;
+  padding-left: 0%;
 }
 
 button {
@@ -20,7 +21,7 @@ button {
 }
 
 button:hover {
-  background-color: #3783bd;
+  background-color: #3e8d32;
   color: white;
 }
 
@@ -32,6 +33,6 @@ h2 {
 }
 
 .card-success {
-  background-color: #7ff67f;
+  background-color: #2bdc2b;
   color: #286528;
 }
